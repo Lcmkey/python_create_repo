@@ -1,6 +1,6 @@
 import os
 import argparse
-from secrets import WHOAMI, GITHUB_TOKEN, API_URL, AUTHOR
+from secrets import WHOAMI, GITHUB_TOKEN, API_URL, OWNER
 from pprint import pprint
 import requests
 
@@ -40,7 +40,7 @@ try:
     os.system("mkdir " + repo_name)
     os.chdir(REPO_PATH + repo_name)
     os.system("git init")
-    os.system("git remote add origin https://github.com/" + AUTHOR + "/" +
+    os.system("git remote add origin https://github.com/" + OWNER + "/" +
               repo_name + ".git")
     os.system("echo '# " + repo_name + "' >> README.md")
     os.system(
