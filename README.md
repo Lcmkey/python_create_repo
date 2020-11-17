@@ -16,4 +16,7 @@
 
     <!-- Create Private Repo -->
     $ python3 create_repo.py -n RepoPublic -p
+
+    <!-- List Repos -->
+    $ python3 list_repos.py
     ```
